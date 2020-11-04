@@ -9,16 +9,22 @@ A simple script that does the following:
 
 # Install/setup
 
-Install dependencies with composer
+1. Clone the repo locally
+
+```git clone git@github.com:richsaddington/acsf_backup_and_restore.git```
+
+2. Install dependencies with composer
+
+```cd acsf_backup_and_restore```
 
 ```composer init; composer require guzzlehttp/guzzle```
 
-1. Populate the $config arrays
+3. Populate the $config arrays
 - callback_url should be a publically accessible endpoint - use https://webhook.site/ for testing
 
-2. Set the ACSF site ID
+4. Set the ACSF site ID
 
-3. Ensure you have permission to execute acsf_backup_and_restore.php
+5. Ensure you have permission to execute acsf_backup_and_restore.php
 
 ```chmod 755 acsf_backup_and_restore.php```
 
