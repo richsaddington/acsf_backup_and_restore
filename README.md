@@ -21,3 +21,6 @@ composer init; composer require guzzlehttp/guzzle
 
 Execute with ./acsf_backup_and_restore.php
  
+# Support/Help
+
+This script is designed to provide an example of the ACSF API calls and should be used to inform an API implementation.
