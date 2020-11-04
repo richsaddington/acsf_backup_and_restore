@@ -10,12 +10,17 @@ A simple script that does the following:
 # Install/setup
 
 Install dependencies with composer
+
 ```composer init; composer require guzzlehttp/guzzle```
 
 1. Populate the $config arrays
 - callback_url should be a publically accessible endpoint - use https://webhook.site/ for testing
 
 2. Set the ACSF site ID
+
+3. Ensure you have permission to execute acsf_backup_and_restore.php
+
+```chmod 755 acsf_backup_and_restore.php```
 
 # Usage
 
