@@ -10,7 +10,7 @@ A simple script that does the following:
 # Install/setup
 
 Install dependencies with composer
-composer init; composer require guzzlehttp/guzzle
+```composer init; composer require guzzlehttp/guzzle```
 
 1. Populate the $config arrays
 - callback_url should be a publically accessible endpoint - use https://webhook.site/ for testing
