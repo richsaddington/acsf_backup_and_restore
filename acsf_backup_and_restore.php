@@ -5,14 +5,12 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 
 // Example script for performing a backup and immediate restore of a site through the ACSF REST API.
-// Two things are left up to the script user:
-// - Including Guzzle, which is used by request();
-//   e.g. by doing: 'composer init; composer require guzzlehttp/guzzle'
+// See Readme for install/setup steps.
 require 'vendor/autoload.php';
 
 // Set config for each ACSF environment...
 $config_dev = [
-  // URL of a subsection inside the SF REST API; must end with sites/.
+  // URL of the SF REST API; e.g https://www.dev-xxxxx.acsitefactory.com/api/v1/
   'url' => '<to do>',
   'api_user' => '<to do>',
   'api_key' => '<to do>',
@@ -20,7 +18,7 @@ $config_dev = [
 ];
 
 $config_test = [
-  // URL of a subsection inside the SF REST API; must end with sites/.
+  // URL of the SF REST API; e.g https://www.test-xxxxx.acsitefactory.com/api/v1/
   'url' => '<to do>/',
   'api_user' => '<to do>',
   'api_key' => '<to do>',
@@ -28,7 +26,7 @@ $config_test = [
 ];
 
 $config_prod = [
-  // URL of a subsection inside the SF REST API; must end with sites/.
+  // URL of the SF REST API; e.g https://www.xxxxx.acsitefactory.com/api/v1/
   'url' => '<to do>',
   'api_user' => '<to do>',
   'api_key' => '<to do>',
