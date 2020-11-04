@@ -13,7 +13,7 @@ require 'vendor/autoload.php';
 // Set config for each ACSF environment...
 $config_dev = [
   // URL of a subsection inside the SF REST API; must end with sites/.
-  'url' => 'https://www.dev-bayerwsf.acsitefactory.com/api/v1/',
+  'url' => '<to do>',
   'api_user' => '<to do>',
   'api_key' => '<to do>',
   'callback_url' => '<to do>'
@@ -21,7 +21,7 @@ $config_dev = [
 
 $config_test = [
   // URL of a subsection inside the SF REST API; must end with sites/.
-  'url' => 'https://www.test-bayerwsf.acsitefactory.com/api/v1/',
+  'url' => '<to do>/',
   'api_user' => '<to do>',
   'api_key' => '<to do>',
   'callback_url' => '<to do>'
@@ -29,7 +29,7 @@ $config_test = [
 
 $config_prod = [
   // URL of a subsection inside the SF REST API; must end with sites/.
-  'url' => 'https://www.bayerwsf.acsitefactory.com/api/v1/',
+  'url' => '<to do>',
   'api_user' => '<to do>',
   'api_key' => '<to do>',
   'callback_url' => '<to do>'
@@ -39,7 +39,7 @@ $config_prod = [
 $config = $config_dev;
 
 // Populate with the site ID to backup
-$site_id = 6351;
+$site_id = 1;
 
 // Create a backup task...
 $body = create_backup($site_id,$config);
